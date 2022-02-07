@@ -1,21 +1,14 @@
-import { useEffect, useState } from "react";
-import getData from "./database/getData.js";
+import { Fragment } from "react";
+import Title from "./components/Title";
+import Search from "./components/Search";
+import EmojisList from "./components/EmojisList";
 
 function App() {
-  const [data, setData] = useState([]);
-
-  useEffect( async() =>{
-    let res = await getData();
-    console.log(res)
-    setData(res);
-  }, [])
-
   return(
-    <ul>
-      {
-        data.map( datos => <li>{datos.symbol}</li>)
-      }
-    </ul>
+    <Fragment>
+      <Title/>
+      
+    </Fragment>
   )
 
 }
