@@ -31,7 +31,7 @@ export default function EmojisList(){
             
             setData(datos);
             }
-            getData('http://localhost:3001/emojis');
+            getData('http://localhost:3001/emojis')
         }, [])
     console.log(data)
     return(
