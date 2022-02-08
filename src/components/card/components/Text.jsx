@@ -1,6 +1,6 @@
 export default function Text(props){
 
     return (
-        <p>{props.text}</p>
+        <p className="card-text" >{props.text}</p>
     )
 }
