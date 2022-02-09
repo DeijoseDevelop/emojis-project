@@ -1,6 +1,3 @@
-export default function Emoji(props){
-
-    return (
-        <div>{props.emoji}</div>
-    )
+export default function Emoji(props) {
+  return <h2>{props.symbol}</h2>;
 }

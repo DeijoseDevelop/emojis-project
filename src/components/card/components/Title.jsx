@@ -1,6 +1,3 @@
-export default function Title(props){
-    
-    return(
-        <h3 className="card-title" >{props.titulo}</h3>
-    )
+export default function Title(props) {
+  return <h3 className='card-header'>{props.title}</h3>;
 }
